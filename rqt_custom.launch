@@ -1,0 +1,3 @@
+<launch>
+  <node name="rqt_win" pkg="rqt" type="rqt"/> 
+</launch>
