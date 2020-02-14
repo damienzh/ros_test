@@ -2,7 +2,7 @@
 
 from PyQt5.QtWidgets import QDialog, QApplication, QInputDialog
 from PyQt5.QtGui import QPixmap
-from ui.ui_resources.vending_ui_demo import *
+from ui.ui_resources.vending_demo_ui import *
 import sys
 
 
