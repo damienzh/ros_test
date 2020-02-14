@@ -36,7 +36,7 @@ class TestUI(QDialog):
 
     def display_keep(self):
         self.msg += 1
-        print self.msg
+        print(self.msg)
         self.ui.labelRespondKeep.setText(str(self.msg))
 
     def display_option(self):
@@ -61,7 +61,7 @@ class TestUI(QDialog):
     def apt_update(self):
         (pwd, ok) = QInputDialog.getText(self, 'Password Input', 'Password', QLineEdit.Password)
         if ok:
-            print 'apt process'
+            print('apt process')
             proc = subprocess.Popen(['sudo', '-S', 'apt', 'update'],
                                     stdin=subprocess.PIPE, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
                                     universal_newlines=True)
@@ -73,7 +73,7 @@ class TestUI(QDialog):
                     self.ui.pushButtonAptUpdate.setEnabled(True)
                     break
                 if output:
-                    print output.strip()
+                    print(output.strip())
                     self.ui.plainTextEditApt.appendPlainText(output.strip())
 
 
